@@ -1,2 +1,3 @@
-# test
-tests
+# Running all tests
+
+./gradlew test
