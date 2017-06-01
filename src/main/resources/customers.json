@@ -1,0 +1,194 @@
+[
+  {
+    "latitude": "52.986375",
+    "userID": 12,
+    "name": "Christina McArdle",
+    "longitude": "-6.043701"
+  },
+  {
+    "latitude": "51.92893",
+    "userID": 1,
+    "name": "Alice Cahill",
+    "longitude": "-10.27699"
+  },
+  {
+    "latitude": "51.8856167",
+    "userID": 2,
+    "name": "Ian McArdle",
+    "longitude": "-10.4240951"
+  },
+  {
+    "latitude": "52.3191841",
+    "userID": 3,
+    "name": "Jack Enright",
+    "longitude": "-8.5072391"
+  },
+  {
+    "latitude": "53.807778",
+    "userID": 28,
+    "name": "Charlie Halligan",
+    "longitude": "-7.714444"
+  },
+  {
+    "latitude": "53.4692815",
+    "userID": 7,
+    "name": "Frank Kehoe",
+    "longitude": "-9.436036"
+  },
+  {
+    "latitude": "54.0894797",
+    "userID": 8,
+    "name": "Eoin Ahearn",
+    "longitude": "-6.18671"
+  },
+  {
+    "latitude": "53.038056",
+    "userID": 26,
+    "name": "Stephen McArdle",
+    "longitude": "-7.653889"
+  },
+  {
+    "latitude": "54.1225",
+    "userID": 27,
+    "name": "Enid Gallagher",
+    "longitude": "-8.143333"
+  },
+  {
+    "latitude": "53.1229599",
+    "userID": 6,
+    "name": "Theresa Enright",
+    "longitude": "-6.2705202"
+  },
+  {
+    "latitude": "52.2559432",
+    "userID": 9,
+    "name": "Jack Dempsey",
+    "longitude": "-7.1048927"
+  },
+  {
+    "latitude": "52.240382",
+    "userID": 10,
+    "name": "Georgina Gallagher",
+    "longitude": "-6.972413"
+  },
+  {
+    "latitude": "53.2451022",
+    "userID": 4,
+    "name": "Ian Kehoe",
+    "longitude": "-6.238335"
+  },
+  {
+    "latitude": "53.1302756",
+    "userID": 5,
+    "name": "Nora Dempsey",
+    "longitude": "-6.2397222"
+  },
+  {
+    "latitude": "53.008769",
+    "userID": 11,
+    "name": "Richard Finnegan",
+    "longitude": "-6.1056711"
+  },
+  {
+    "latitude": "53.1489345",
+    "userID": 31,
+    "name": "Alan Behan",
+    "longitude": "-6.8422408"
+  },
+  {
+    "latitude": "53",
+    "userID": 13,
+    "name": "Olive Ahearn",
+    "longitude": "-7"
+  },
+  {
+    "latitude": "51.999447",
+    "userID": 14,
+    "name": "Helen Cahill",
+    "longitude": "-9.742744"
+  },
+  {
+    "latitude": "52.966",
+    "userID": 15,
+    "name": "Michael Ahearn",
+    "longitude": "-6.463"
+  },
+  {
+    "latitude": "52.366037",
+    "userID": 16,
+    "name": "Ian Larkin",
+    "longitude": "-8.179118"
+  },
+  {
+    "latitude": "54.180238",
+    "userID": 17,
+    "name": "Patricia Cahill",
+    "longitude": "-5.920898"
+  },
+  {
+    "latitude": "53.0033946",
+    "userID": 39,
+    "name": "Lisa Ahearn",
+    "longitude": "-6.3877505"
+  },
+  {
+    "latitude": "52.228056",
+    "userID": 18,
+    "name": "Bob Larkin",
+    "longitude": "-7.915833"
+  },
+  {
+    "latitude": "54.133333",
+    "userID": 24,
+    "name": "Rose Enright",
+    "longitude": "-6.433333"
+  },
+  {
+    "latitude": "55.033",
+    "userID": 19,
+    "name": "Enid Cahill",
+    "longitude": "-8.112"
+  },
+  {
+    "latitude": "53.521111",
+    "userID": 20,
+    "name": "Enid Enright",
+    "longitude": "-9.831111"
+  },
+  {
+    "latitude": "51.802",
+    "userID": 21,
+    "name": "David Ahearn",
+    "longitude": "-9.442"
+  },
+  {
+    "latitude": "54.374208",
+    "userID": 22,
+    "name": "Charlie McArdle",
+    "longitude": "-8.371639"
+  },
+  {
+      "latitude": "53.74452",
+    "userID": 29,
+    "name": "Oliver Ahearn",
+    "longitude": "-7.11167"
+  },
+  {
+    "latitude": "53.761389",
+    "userID": 30,
+    "name": "Nick Enright",
+    "longitude": "-7.2875"
+  },
+  {
+    "latitude": "54.080556",
+    "userID": 23,
+    "name": "Eoin Gallagher",
+    "longitude": "-6.361944"
+  },
+  {
+    "latitude": "52.833502",
+    "userID": 25,
+    "name": "David Behan",
+    "longitude": "-8.522366"
+  }
+]
