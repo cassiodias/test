@@ -9,7 +9,7 @@ class CustomerRepositorySpec extends Specification {
         given:
         CustomerResource customerResource = Spy(CustomerResource)
         ObjectMapper mapper = Spy(ObjectMapper)
-        CustomerRepository customerRepository = new CustomerRepository(customerResource, mapper)
+        CustomerRepository customerRepository = new CustomerRepository(customerResource: customerResource , objectMapper: mapper)
 
         when:
         Customer[] customers = customerRepository.loadAll()
@@ -31,11 +31,13 @@ class CustomerRepositorySpec extends Specification {
         1 * mapper.readValue(_ as File, _ as Class)
     }
 
-    def "should handle properly exceptions when customer resource fails"() {
+    def "should handle properly exceptions when customer resource throws exception"() {
         given:
         CustomerResource customerResource = Mock(CustomerResource)
+        customerResource.loadFile() >> { throw new IOException() }
+
         ObjectMapper mapper = Spy(ObjectMapper)
-        CustomerRepository customerRepository = new CustomerRepository(customerResource, mapper)
+        CustomerRepository customerRepository = new CustomerRepository(customerResource: customerResource , objectMapper: mapper)
 
         when:
         customerRepository.loadAll()
@@ -44,27 +46,30 @@ class CustomerRepositorySpec extends Specification {
         thrown(RuntimeException)
 
         and: 'customer resource throws exception when executed'
-        1 * customerResource.loadFile() >> {
-            // mocked behavior
-            throw new IOException()
-        }
+        1 * customerResource.loadFile()
 
         and: 'object mapper must not be executed'
         0 * mapper.readValue(_ as File, _ as Class)
     }
 
-    def "should failed when there is no required dependencies"() {
+    def "should handle mapper exceptions when customer resource returns null"() {
+        given:
+        CustomerResource customerResource = Mock(CustomerResource)
+        customerResource.loadFile() >> { null }
+        ObjectMapper mapper = Spy(ObjectMapper)
+        CustomerRepository customerRepository = new CustomerRepository(customerResource: customerResource , objectMapper: mapper)
+
         when:
-        new CustomerRepository(customerResorce, mapper)
+        customerRepository.loadAll()
 
-        then:
-        thrown(IllegalArgumentException)
+        then: 'Exception must be thrown'
+        thrown(RuntimeException)
 
-        where:
-        customerResorce        | mapper
-        null                   | null
-        new CustomerResource() | null
-        null                   | new ObjectMapper()
+        and: 'customer resource throws exception when executed'
+        1 * customerResource.loadFile()
+
+        and: 'object mapper must not be executed'
+        1 * mapper.readValue(null, _ as Class)
     }
 
 }
