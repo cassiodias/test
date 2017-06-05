@@ -63,12 +63,7 @@ public class Customer {
 
     @Override
     public String toString() {
-        return "Customer{" +
-                "userID=" + userID +
-                ", latitude='" + latitude + '\'' +
-                ", longitude='" + longitude + '\'' +
-                ", name='" + name + '\'' +
-                '}';
+        return name + " - Id: " + userID;
     }
 
 }
